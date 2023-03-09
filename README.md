@@ -1,2 +1,2 @@
 # Nand2Tetris
-The projects on nand2tries
+Building the chips in projects of nand2tries
