@@ -8,7 +8,7 @@ This course introduces the core parts that make up computer systems from the lev
 Weighting: 36% (multiple exercises, each weighted 3-8%; see each assignment for details)
 
 7 assignments in total.
-The first four chapters of the course are based on the Nand2Tetris projects.
+The first four chapters of the course are based on the Nand2Tetris projects. (Project -> project 1-4)
 The last three chapters use their own materials.
 
 ## Weekly quizzes
