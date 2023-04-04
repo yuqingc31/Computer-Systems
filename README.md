@@ -23,3 +23,4 @@ Weighting: 14% (2 exams, each worth 7%)
 
 Weighting: 45% HURDLE REQUIREMENT
 
+## Contact: yuqingc31@gmail.com
