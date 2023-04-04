@@ -1,2 +1,25 @@
-# Nand2Tetris
-Building the chips in projects of nand2tries for Computer Systems course in The University of Adelaide
+## Computer System COMP SCI 7081
+
+# Introduction:
+
+This course introduces the core parts that make up computer systems from the level of basic logic gates, through to CPU architecture, machine language, compilers, and applications. In doing do, we hope that you'll gain an understanding of the fundamental workings of computers that will help inform the way you work with these systems in your further studies and careers.
+
+# Assignments:
+Weighting: 36% (multiple exercises, each weighted 3-8%; see each assignment for details)
+
+7 assignments in total.
+The first five chapters of the course are based on the Nand2Tetris projects.
+The last five chapters use their own materials.
+
+# Weekly quizzes
+
+Weighting: 5% (12 quizzes, each weighted 0.5%, best 10 quiz results used)
+
+# Practical exams
+
+Weighting: 14% (2 exams, each worth 7%)
+
+# Final exam
+
+Weighting: 45% HURDLE REQUIREMENT
+
