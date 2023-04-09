@@ -55,9 +55,30 @@
     M=M+1
 
     @R0
-    M=M+D           //R0+R2
+    M=M-D           
 
     @LOOP2
+    0;JMP
+
+(LOOP3)
+    @R1
+    D=M
+    // If R1==0, stop the loop
+    @END
+    D;JEQ
+
+    @R2
+    D=M
+    @NEG_R2
+    D;JLT
+
+    @R1
+    M=M+1
+
+    @R0
+    M=M+D           
+
+    @LOOP3
     0;JMP
 
 (NEG_R2)
@@ -68,6 +89,7 @@
     @R2
     M=D
     // JMP to R2
-    @LOOP2
+    @LOOP3
     0;JMP
+    
 (END)
