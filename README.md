@@ -12,7 +12,7 @@ The first four chapters of the course are based on the Nand2Tetris projects. (Pr
 
 The last three chapters use their own materials. (assignments -> assignment 5-7)
 
---> I didn't get full mark for prac 5, still has some small problems
+PS: I didn't get full mark for prac 5, still has some small problems
 
 ## Weekly quizzes
 
