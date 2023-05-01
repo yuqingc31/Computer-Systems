@@ -1,6 +1,0 @@
-@R2
-D=M
-@SCREEN
-D=-A
-@x
-M=D
