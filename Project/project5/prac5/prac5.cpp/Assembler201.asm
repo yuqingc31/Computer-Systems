@@ -1,0 +1,10 @@
+(LOOP)
+    @R0
+    MD=-M
+    @R1
+    D=M
+    @LOOP
+    D;JLT
+(END)
+    @END
+    0;JMP

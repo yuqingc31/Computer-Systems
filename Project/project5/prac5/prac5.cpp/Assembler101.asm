@@ -1,0 +1,15 @@
+@0
+MD=!M
+M=M+1
+A=A+1
+D=D+1
+@x
+A=0
+@SP
+AM=-1
+@value
+AD=!D
+AMD=!A
+@value2
+D=-D
+D=D-1
