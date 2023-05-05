@@ -1,0 +1,110 @@
+// Calculates a = x*y
+// a is a local variable
+// x & y are static variables
+
+// Put your code here.
+
+// Check if x < 0
+push constant 0
+push static 0
+gt                  // If 0 > x
+if-goto POSX
+
+// If x > 0
+push static 0       
+pop temp 0          // store x to temp 0
+goto CHECKY
+
+// If x < 0, make x positive for next operations
+label POSX
+push static 0
+neg
+pop temp 0           // store x to temp 0
+goto CHECKY
+
+// Check if y < 0
+label CHECKY
+push constant 0
+push static 1
+gt
+if-goto POSY         // if y < 0
+
+// if y > 0
+push static 1
+pop temp 1           // store y to temp 1
+goto COMPARE
+
+label POSY
+push static 1
+neg
+pop temp 1          // store y to temp 1
+goto COMPARE
+
+label COMPARE
+push temp 0
+push temp 1
+gt                  // If x > y
+if-goto INITIALISATION
+push temp 0
+push temp 1
+pop temp 0
+pop temp 1
+
+label INITIALISATION
+push constant 0
+pop temp 2          // It is to store the result of x*y
+goto LOOP
+
+label CHECKPOS       // check if y = 0
+push temp 1
+push constant 0
+gt                  // If current y > 0
+if-goto LOOP
+goto LOOPEND            // if current y = 0
+
+label LOOP
+push temp 2
+push temp 0
+add
+pop temp 2          // store the result to temp 2
+push temp 1         // recursively y - 1 till 0
+push constant 1
+sub
+pop temp 1
+goto CHECKPOS
+
+label LOOPEND
+// check if both number signs are the same
+push static 0
+push constant 0
+gt
+if-goto X_IS_POS        // If x > 0 
+
+// if x < 0
+push static 1
+push constant 0
+gt
+if-goto DIFFERENT       // If y > 0, x < 0
+
+push temp 2             // If y < 0, x < 0
+pop local 0
+goto END
+
+label X_IS_POS          // If x > 0 
+push static 1
+push constant 0
+lt                      // If y < 0, x > 0
+if-goto DIFFERENT
+push temp 2
+pop local 0
+goto END
+
+label DIFFERENT
+push temp 2
+neg
+pop local 0
+
+goto END
+
+label END
+goto END
