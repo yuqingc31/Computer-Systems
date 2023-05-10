@@ -1,0 +1,7 @@
+function SubTest.test 0
+push constant 0
+return
+
+function MainFunction 0
+call SubTest.test 0
+pop temp 0

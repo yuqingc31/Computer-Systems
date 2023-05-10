@@ -1,0 +1,8 @@
+push argument 0
+pop temp 1
+goto LOOP
+
+label LOOP
+    push argument 0
+    push temp 0
+    add

@@ -1,0 +1,7 @@
+goto LABEL_02
+
+label LABEL_02
+    push constant 1
+    push constant 2
+    add
+    pop temp 0

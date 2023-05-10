@@ -1,0 +1,25 @@
+function Sys.init 0
+
+// call function foo
+call foo 3
+pop temp 0
+
+label HALT
+goto HALT
+
+function foo 3
+  push argument 0
+  pop local 0
+
+  push argument 1
+  pop local 1
+  push argument 2
+  pop local 2
+
+  push local 0
+  push local 1
+  push local 2
+  call Math.multiply 2
+  pop local 3
+
+  return

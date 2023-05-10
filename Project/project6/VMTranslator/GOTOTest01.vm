@@ -1,0 +1,6 @@
+goto LABEL_01
+
+label LABEL_01
+    push argument 0
+    push temp 0
+    add

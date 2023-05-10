@@ -1,0 +1,10 @@
+push constant 10
+push constant 20
+gt
+if-goto IF_TRUE
+push constant 0
+goto IF_END
+(IF_TRUE)
+    push constant -1
+(IF_END)
+    pop temp 0

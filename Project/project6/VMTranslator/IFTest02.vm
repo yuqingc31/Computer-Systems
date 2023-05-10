@@ -1,0 +1,11 @@
+push local 0
+push local 1
+if-gt IF_TRUE
+
+goto IF_END
+(IF_TRUE)
+    push constant 0
+    push constant 1
+    pop temp 1
+(IF_END)
+    pop temp 0

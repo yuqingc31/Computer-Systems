@@ -1,0 +1,4 @@
+// push and pop
+push constant 0
+push constant 1
+push constant 8

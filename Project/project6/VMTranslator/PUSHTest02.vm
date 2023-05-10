@@ -1,0 +1,4 @@
+// push and pop
+push costant 10
+push local 0
+push constant 2
