@@ -724,6 +724,7 @@ ParseTree* CompilerParser::compileExpression() {
                     break;
                 }
             }
+
         }
     }
     return tree;
@@ -820,7 +821,7 @@ ParseTree* CompilerParser::compileTerm() {
         tree->addChild(new ParseTree(current()->getType(), current()->getValue()));
         cout << "compileTerm " << current()->getType() << " " << current()->getValue() << endl;
         next();
-
+        
         tree->addChild(compileExpression());
 
         if(have("symbol", ")")){
