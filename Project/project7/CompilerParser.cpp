@@ -837,7 +837,7 @@ ParseTree* CompilerParser::compileTerm() {
         next();
     }
     else if(have("keyword","true") || have("keyword","false")){
-        tree->addChild(new ParseTree("keywordConstant", current()->getValue()));
+        tree->addChild(new ParseTree("keyword", current()->getValue()));
         cout << "compileTerm " << current()->getType() << " " << current()->getValue() << endl;
         next();
     }
